@@ -9,6 +9,3 @@ resource "aws_instance" "myec2" {
   instance_type = "t2.micro"
 
 }
-outputs{
-  value =aws_instance.myec2.attributes.public_ip
-}
