@@ -5,16 +5,20 @@ provider "aws" {
 
 }
 terraform {
-  required_version = "~> 0.13.0"
+  backend "remote" {
+    organization = "techhb"
 
-  backend "remote" {}
+    workspaces {
+      name = "terraform_training"
+    }
+  }
 }
+
 resource "aws_instance" "myec2" {
   ami = "ami-0603cbe34fd08cb81"
   instance_type = "t2.micro"
 
 }
 output "public_ip"{
-  value =aws_instance.myec2.public_ip
+  value =aws_instance.myec2.instance_type
 }
-
