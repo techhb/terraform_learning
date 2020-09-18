@@ -19,6 +19,6 @@ terraform {
 #  instance_type = "t2.micro"
 
 #}
-output "public_ip"{
-  value =aws_instance.myec2.public_ip
-}
+# output "public_ip"{
+#  value =aws_instance.myec2.public_ip
+#}
