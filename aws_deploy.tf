@@ -13,3 +13,7 @@ resource "aws_instance" "myec2" {
 output "public_ip"{
   value =aws_instance.myec2.instance_type
 }
+variable "access_key" {
+}
+variable "secret" {
+}
