@@ -1,11 +1,11 @@
 resource "aws_subnet" "subnet-uno" {
-  cidr_block = cidrsubnet(aws_vpc.test-env.cidr_block, 3, 1)
-  vpc_id = aws_vpc.test-env.id
+  cidr_block        = cidrsubnet(aws_vpc.test-env.cidr_block, 3, 1)
+  vpc_id            = aws_vpc.test-env.id
   availability_zone = "us-east-2a"
 }
 resource "aws_route_table" "route-table-test-env" {
   vpc_id = aws_vpc.test-env.id
-route {
+  route {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.test-env-gw.id
   }
