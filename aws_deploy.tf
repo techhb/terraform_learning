@@ -23,5 +23,5 @@ resource "aws_instance" "test-ec2-instance" {
 subnet_id = "aws_subnet.subnet-uno.id"
 }
 output "public_ip"{
-  value =aws_instance.test-ec2-instance.public_ip
+  value = aws_instance.test-ec2-instance.public_ip
 }
