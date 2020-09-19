@@ -8,5 +8,5 @@ variable "ami_id" {
 }
 variable "ami_key_pair_name" {
   type = string
-  default = "ec2_docker_install.pem"
+  default = "ec2_ppk"
 }
