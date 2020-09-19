@@ -27,6 +27,6 @@ output "public_ip"{
 }
 
 resource "aws_key_pair" "ec2_ppk" {
-  key_name   = "deployer-key"
-  public_key = "AAAAB3NzaC1yc2EAAAADAQABAAABAQCDxdfR+LBQrTPqkBtXemqSRFZAfRCxNkudwVPhoc17wCTQECJP7TkmM9bqes5HaQVrJKutIq/ciNtQGKWiypGwAdYUWyektkzuMyHLaU+vV5gR5OstnzXIBE5NeWkH7tg+RU0/PTlOpH/y1mMYnBviOKR3rlkjrgtuZ80sFt0BgfHPrax7Nmg4G369Fv9KEYaiz29MDhUsisy1pFNmDINFoUC/rEIuWksmu/W4VWt5oMh4jCiPGWqAyhHs2jNZ3vdBPSqFYKCnMA+WAFBI7SP3IT5E7u7XjM7tMhALgT1WB7KVru6JW1ezqZjvLpnG8mFalFsT7mfJv2/z2arTlKMH"
+  key_name   = "ec2_conn"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYfCAXkNBPYyq5HqZjeNJUFDB6TZcGm6KKJXKpgL5zqFbg/u5ao0z0sWt8Cz6z5lKGs/kjdbd4N8+H0Z/42CuYyB+JT0jMo3p/tiCpDuiLPJECpjyMm7wjYpIBVd6PPORo+WU5h/iG3FeoHmSFjJJyYHaBT0kJ9ElSemsL+R1POg+bpO8OIGa2EGHgWFqx2wiFbQE5Jwr6jzetJRnR1elo1ppr7z78z1cqu8mLenoYzBQzJ3yn9CRL79P0aaAEgQonfn+iNdyRN9XY8JZix0eEtG/mB1RQIUD4VZ5Vk/SESUZ07JrUzHmp7K+PHCw9+2ITGUxOOxMVlN2z53tcJQYH"
 }
